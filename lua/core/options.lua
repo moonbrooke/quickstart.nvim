@@ -1,4 +1,4 @@
-vim.cmd("language en_US")
+-- vim.cmd("language en_US")
 
 vim.g.have_nerd_font = true
 vim.g.loaded_netrw = 1
