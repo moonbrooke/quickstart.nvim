@@ -33,12 +33,6 @@ map("n", "<C-Down>", "<CMD>wincmd j<CR>", opts) -- Navigate Down
 map("n", "<C-Up>", "<CMD>wincmd k<CR>", opts) -- Navigate Up
 map("n", "<C-Right>", "<CMD>wincmd l<CR>", opts) -- Navigate Right
 
--- Resize split with arrows
-map("n", "<M-Up>", "<CMD>resize -2<CR>", opts)
-map("n", "<M-Down>", "<CMD>resize +2<CR>", opts)
-map("n", "<M-Left>", "<CMD>vertical resize -2<CR>", opts)
-map("n", "<M-Right>", "<CMD>vertical resize +2<CR>", opts)
-
 -- Toggle line wrapping
 map("n", "<leader>lw", "<CMD>set wrap!<CR>", opts)
 
@@ -54,10 +48,6 @@ map("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic message
 map("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to prev diagnostic message" })
 map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
-
--- Comment
-map("n", "<leader>/", "gcc", opts)
-map("v", "<leader>/", "gc", opts)
 
 -- Duplicate
 map({ "n" }, "<C-S-A-Up>", "<CMD>LineDuplicate -1<CR>", { desc = "Duplicate line up" })
