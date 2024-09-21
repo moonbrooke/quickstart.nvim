@@ -14,7 +14,9 @@ o.number = true
 o.mouse = "a"
 o.showmode = false
 
-o.clipboard = "unnamedplus"
+vim.schedule(function()
+	o.clipboard = "unnamedplus"
+end)
 
 o.fileencoding = "utf-8"
 o.title = true
