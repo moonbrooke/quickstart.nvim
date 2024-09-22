@@ -54,3 +54,11 @@ map({ "n" }, "<C-S-A-Up>", "<CMD>LineDuplicate -1<CR>", { desc = "Duplicate line
 map({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate +1<CR>", { desc = "Duplicate line down" })
 map({ "v" }, "<C-S-A-Up>", "<CMD>VisualDuplicate -1<CR>", { desc = "Duplicate selection up" })
 map({ "v" }, "<C-S-A-Down>", "<CMD>VisualDuplicate +1<CR>", { desc = "Duplicate selection down" })
+
+-- Visual Multi
+vim.g.VM_maps = {
+	["Select l"] = "<M-Right>",
+	["Select h"] = "<M-Left>",
+	["Goto Next"] = "",
+	["Goto Prev"] = "",
+}
